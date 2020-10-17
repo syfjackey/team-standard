@@ -1,15 +1,7 @@
 module.exports = {
-  extends: [
-    "@commitlint/config-conventional"
-  ],
-  rules: {
-    'type-enum': [2, 'always', [
-      'build','upd', 'feat', 'fix', 'refactor', 'perf','docs', 'chore', 'style', 'test','revert','ci'
-     ]]
-  }
+  extends: ['@commitlint/config-conventional'],
 };
 // build：主要目的是修改项目构建系统(例如 glup，webpack，rollup 的配置等)的提交
-// updated: 更新部分功能
 // feat：新增功能
 // fix：bug 修复
 // refactor：重构代码(既没有新增功能，也没有修复 bug)
