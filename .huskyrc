@@ -2,6 +2,6 @@
   "hooks": {
     "pre-commit": "pretty-quick --staged",
     "pre-publish": "npm run lint",
-    "commit-msg": "commitlint  -x @commitlint/config-conventional -e $HUSKY_GIT_PARAMS"
+    "commit-msg": "commitlint   -e $HUSKY_GIT_PARAMS"
   }
 }
