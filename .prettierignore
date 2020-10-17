@@ -2,3 +2,4 @@ dist/
 .gitignore
 .prettierignore
 .huskyrc
+.editorconfig
