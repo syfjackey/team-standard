@@ -22,7 +22,7 @@
     }
   ],
   "rules": {
-    "comma-dangle": [2, "always-multiline"],
+    "comma-dangle": [2, "never"],
     "no-var": "error",
     "no-console": [2, { "allow": ["warn", "error"] }],
     "object-shorthand": 2,

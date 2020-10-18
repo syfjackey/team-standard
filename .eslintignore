@@ -3,3 +3,5 @@ node_modules/
 **/style/
 *.html
 dist/
+**/*.test.*
+**/__test__/
