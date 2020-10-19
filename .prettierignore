@@ -3,3 +3,5 @@ dist/
 .prettierignore
 .huskyrc
 .editorconfig
+.stylelintrc
+testReport/
