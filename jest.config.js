@@ -11,10 +11,23 @@ module.exports = {
     '^.+\\.(js|jsx)$': '<rootDir>/node_modules/babel-jest',
     '^.+\\.svg$': '<rootDir>/node_modules/jest-transform-stub',
     '^.+\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
+      '<rootDir>/node_modules/jest-transform-stub'
   },
   testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$',
   transformIgnorePatterns: ['/dist/'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/(.*)$': '<rootDir>/src/$1'
   },
+  reporters: [
+    'default',
+    [
+      './node_modules/jest-html-reporter',
+      {
+        pageTitle: 'Test Report',
+        outputPath: 'testReport/index.html',
+        includeFailureMsg: true
+      }
+    ]
+  ]
 };

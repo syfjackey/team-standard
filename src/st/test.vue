@@ -6,9 +6,9 @@
 export default {
   data() {
     return {
-      a: 1,
+      a: 1
     };
-  },
+  }
 };
 </script>
 
